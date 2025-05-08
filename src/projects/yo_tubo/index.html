@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon" />
+    <title>Yo Tubo?</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <header class="bg-white border-bottom py-2">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <div>
+                <button class="btn btn-danger">Yo</button>
+                <span class="ml-2 font-weight-bold">Tubo?</span>
+            </div>
+            <input type="search" class="form-control w-25" placeholder="Search...">
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link">Posts</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-4 flex-grow-1">
+        <section class="mx-auto" style="max-width: 600px;">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">New Post</h5>
+                </div>
+                <div class="card-body">
+                    <textarea id="input-post" class="form-control mb-3" rows="4"
+                        placeholder="What's on your mind?"></textarea>
+                    <button id="create-post" class="btn btn-dark">Post</button>
+                </div>
+            </div>
+
+            <div id="timeline"></div>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
