@@ -1,0 +1,124 @@
+/* style.css */
+:root {
+    --color-bg: #111;
+    --color-text: #f1f1f1;
+    --color-subtle: #bbb;
+    --color-link: #b0d494;
+    --color-border: #1a1a1d;
+    --font-body: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__logo {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.header__nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header__link {
+    font-size: 0.875rem;
+    color: var(--color-subtle);
+    transition: color 0.3s;
+}
+
+.header__link:hover {
+    color: var(--color-text);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+
+.card {
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.card:hover {
+    border-color: var(--color-link);
+}
+
+.card__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card__description {
+    font-size: 0.875rem;
+    color: var(--color-subtle);
+    margin-bottom: 1rem;
+}
+
+.card__tags {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card__tag {
+    font-size: 0.75rem;
+    color: var(--color-link);
+}
+
+.footer {
+    margin-top: 4rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--color-subtle);
+}
+
+.footer__link {
+    color: var(--color-link);
+}
+
+.footer__logo {
+    color: var(--color-link);
+    font-weight: bold;
+}
