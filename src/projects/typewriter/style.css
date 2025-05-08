@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.ai-ce {
+    align-items: center;
+}
+
+.jc-ce {
+    justify-content: center;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.typewriter {
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    min-height: 1.5rem;
+}
+
+.type-text {
+    font-size: 1.25rem;
+    color: #222;
+    margin: 0;
+    padding-right: 0.25rem;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
