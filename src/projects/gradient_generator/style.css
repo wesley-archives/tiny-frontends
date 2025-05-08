@@ -1,0 +1,111 @@
+:root {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #e2e8f0;
+    --ring: #cbd5e1;
+    --radius: 0.75rem;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --button-bg: #0f172a;
+    --button-hover: #1e293b;
+    --button-text: #f8fafc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg);
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    padding: 2rem;
+}
+
+.gradient-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 960px;
+}
+
+.gradient-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.3s ease;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+}
+
+.gradient-item-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.gradient-item {
+    height: 200px;
+    border-radius: var(--radius);
+    transition: background 0.5s ease;
+    outline: 1px solid var(--muted);
+}
+
+button {
+    cursor: pointer;
+    padding: 0.625rem 1rem;
+    border-radius: var(--radius);
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: var(--button-hover);
+    transform: translateY(-2px);
+}
+
+.gradient-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    background: var(--muted);
+    color: var(--text);
+    border-radius: var(--radius);
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.color-info {
+    font-family: monospace;
+}
+
+.copy-btn {
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 0.4rem 0.75rem;
+    border-radius: var(--radius);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.copy-btn:hover {
+    background: var(--button-hover);
+    transform: translateY(-2px);
+}
