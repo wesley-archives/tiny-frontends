@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+
+<body>
+    <div class="bg-gray-100 min-h-screen p-6 font-sans">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2 text-center text-gray-800">🎨 Pixel Art Editor</h1>
+            <p class="text-center text-gray-600 mb-6 max-w-2xl mx-auto">
+                A minimalist pixel drawing tool with undo/redo, grid control, save/load, and PNG export. Start creating
+                your retro pixel masterpieces instantly!
+            </p>
+
+            <div class="mb-4 flex flex-wrap gap-4 justify-center items-center">
+                <input type="color" id="colorPicker" class="w-12 h-12 border border-gray-300 rounded-lg">
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" id="eraserToggle"> Eraser
+                </label>
+                <input type="number" id="gridSize" min="4" max="64" value="16"
+                    class="w-20 px-2 py-1 border border-gray-300 rounded-md">
+                <button id="resizeBtn" class="px-4 py-2 bg-blue-600 text-white rounded-lg">Resize</button>
+                <button id="clearBtn" class="px-4 py-2 bg-gray-800 text-white rounded-lg">Clear</button>
+                <button id="fillBtn" class="px-4 py-2 bg-yellow-500 text-white rounded-lg">Fill</button>
+                <button id="downloadBtn" class="px-4 py-2 bg-green-600 text-white rounded-lg">Download</button>
+                <button id="toggleGridBtn" class="px-4 py-2 bg-purple-600 text-white rounded-lg">Toggle Grid</button>
+                <button id="saveBtn" class="px-4 py-2 bg-pink-600 text-white rounded-lg">Save</button>
+                <button id="loadBtn" class="px-4 py-2 bg-orange-500 text-white rounded-lg">Load</button>
+                <button id="undoBtn" class="px-4 py-2 bg-red-500 text-white rounded-lg">Undo</button>
+                <button id="redoBtn" class="px-4 py-2 bg-indigo-600 text-white rounded-lg">Redo</button>
+            </div>
+
+            <div id="gridContainer" class="grid mx-auto bg-gray-300" style="--cols: 16; width: fit-content;"></div>
+        </div>
+
+        <canvas id="hiddenCanvas" style="display: none;"></canvas>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

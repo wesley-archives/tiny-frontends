@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    gap: 1px;
+    background-color: #ccc;
+}
+
+.pixel {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.no-gap {
+    gap: 0;
+}
