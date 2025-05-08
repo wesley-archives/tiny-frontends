@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSCode Clone</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+
+<body>
+    <div>
+        <div class="vscode-container">
+            <!-- Explorer Sidebar -->
+            <aside class="explorer">
+                <div class="explorer-header">
+                    <span>EXPLORER</span>
+                    <button class="icon-button">···</button>
+                </div>
+                <div class="folder-section">
+                    <div class="folder-header">
+                        <span class="chevron">▼</span>
+                        <span>FOLDER</span>
+                    </div>
+                    <ul class="file-list">
+                        <li class="file active">
+                            <span class="file-icon html-icon">H</span>
+                            <span>index.html</span>
+                        </li>
+                        <li class="file">
+                            <span class="file-icon js-icon">JS</span>
+                            <span>script.js</span>
+                        </li>
+                        <li class="file">
+                            <span class="file-icon css-icon">#</span>
+                            <span>style.css</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Editor Area -->
+            <main class="editor-area">
+                <!-- Tabs -->
+                <div class="tabs">
+                    <div class="tab active">
+                        <span class="file-icon small">📄</span>
+                        <span>index.html</span>
+                        <button class="close-button">×</button>
+                    </div>
+                    <div class="tab-actions">
+                        <button class="icon-button">⊞</button>
+                        <button class="icon-button">⊟</button>
+                        <button class="icon-button">···</button>
+                    </div>
+                </div>
+
+                <!-- Editor Content -->
+                <div class="editor-content">
+                    <div class="line-numbers">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                        <div>13</div>
+                        <div>14</div>
+                    </div>
+                    <textarea id="editor" spellcheck="false"></textarea>
+                </div>
+
+                <!-- Status Bar -->
+                <div class="status-bar">
+                    <div class="left-items">
+                        <span>HTML</span>
+                        <span>UTF-8</span>
+                        <span>LF</span>
+                    </div>
+                    <div class="right-items">
+                        <button id="downloadBtn" class="status-item">⬇️ Download</button>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Preview Panel -->
+            <div class="preview-panel">
+                <div class="preview-header">
+                    <span class="document-icon">📄</span>
+                    <span>Document</span>
+                    <button class="close-button">×</button>
+                </div>
+                <div class="preview-toolbar">
+                    <button class="icon-button">←</button>
+                    <button class="icon-button">→</button>
+                    <button class="icon-button">↻</button>
+                    <span class="url-bar">http://127.0.0.1:3000/index.html</span>
+                </div>
+                <iframe id="preview" class="preview-iframe"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
