@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wizzard Mail | All emails</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+    <section id="section-results">
+        <div class="list"></div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            const listDiv = document.querySelector('.list');
+
+            if (users.length === 0) {
+                listDiv.innerHTML = '<p>No registered users yet.</p>';
+            } else {
+                listDiv.innerHTML = users.map(user => `
+          <div class="user">
+            <strong>${user.name}</strong> - <em>${user.email}</em>
+          </div>
+        `).join('');
+            }
+        });
+    </script>
+</body>
+
+</html>
