@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main class="quiz" role="main">
+        <header class="quiz__header">
+            <div class="quiz__logo">
+                <span aria-hidden="true">🤓</span>
+                GeekQuiz
+            </div>
+            <div class="quiz__score" aria-label="Current score">
+                <span aria-hidden="true">✅</span>
+                <span id="score">0</span>
+            </div>
+        </header>
+
+        <section class="quiz__section">
+            <p class="quiz__question" id="question">Loading...</p>
+            <div class="quiz__options" id="options"></div>
+        </section>
+
+        <footer class="quiz__footer">
+            <div class="quiz__progress" id="progress">0 <span>/ 0</span></div>
+            <button class="quiz__next-button" id="nextBtn" disabled aria-disabled="true">➡️ <span
+                    class="sr-only">Next</span></button>
+            <button class="quiz__next-button" id="restartBtn" style="display:none;">🔁 Restart</button>
+        </footer>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
