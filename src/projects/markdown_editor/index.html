@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Markdown Editor</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+
+<body>
+    <div class="bg-gray-100 min-h-screen flex font-sans">
+
+        <!-- Left Side (Markdown Input) -->
+        <div class="w-1/2 h-screen flex flex-col border-r border-gray-300 p-6">
+            <h2 class="text-lg font-semibold mb-2 text-gray-700">Markdown Input</h2>
+            <textarea id="markdownInput"
+                class="w-full flex-1 p-6 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm bg-white"
+                placeholder="# Hello World\nWrite some *markdown* here...">
+      # Welcome to the Minimal Markdown Editor
+      
+      Write some *markdown* here...
+      
+      - Item 1
+      - Item 2
+      
+      ![Image](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjAwZHY5Mzk4N3VwYmZsa2F0cHE5MWphOTkzdHI4dTB6cmt5b3J2ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TPl5N4Ci49ZQY/giphy.gif)
+      
+      **Enjoy!**
+          </textarea>
+        </div>
+
+        <!-- Right Side (Preview) -->
+        <div class="w-1/2 h-screen flex flex-col p-6">
+            <h2 class="text-lg font-semibold mb-2 text-gray-700">Preview</h2>
+            <div id="preview"
+                class="markdown-output bg-white p-6 border border-gray-200 rounded-lg text-sm prose max-w-none"></div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

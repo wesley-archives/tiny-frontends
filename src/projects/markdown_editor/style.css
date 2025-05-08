@@ -1,0 +1,62 @@
+textarea {
+    resize: none;
+}
+
+.markdown-output {
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.markdown-output h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.markdown-output h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.markdown-output h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.markdown-output h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.markdown-output h5 {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.markdown-output ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.markdown-output li {
+    margin-bottom: 0.5rem;
+}
+
+.markdown-output strong {
+    font-weight: 700;
+}
+
+.markdown-output em {
+    font-style: italic;
+}
+
+.markdown-output a {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.markdown-output img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
