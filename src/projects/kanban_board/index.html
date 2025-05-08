@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <style>
+        .note {
+            cursor: move;
+        }
+    </style>
+</head>
+
+<body class="bg-light d-flex flex-column overflow-hidden" style="min-height: 100dvh;">
+
+    <header class="text-center p-3 bg-white border-bottom">
+        <h1 class="h2">Kanban</h1>
+    </header>
+
+    <main class="container d-flex flex-column align-items-center justify-content-center p-3" style="flex: 1;">
+        <div class="row justify-content-center w-100 h-100" style="flex: 1;">
+
+            <div class="col-12 col-md-4 mb-3">
+                <div class="board card h-100 d-flex flex-column">
+                    <div class="card-header d-flex justify-content-between">
+                        <h2 class="h4">To Do</h2>
+                        <button id="newTodoNote" class="btn btn-outline-dark font-weight-bold">+ Note</button>
+                    </div>
+                    <div id="todoNotes" class="card-body flex-grow-1 droppable-area" data-column="todo"></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-3">
+                <div class="board card h-100 d-flex flex-column">
+                    <div class="card-header bg-warning d-flex justify-content-between">
+                        <h2 class="h4">Progress</h2>
+                        <button id="newProgressNote" class="btn btn-outline-dark font-weight-bold">+ Note</button>
+                    </div>
+                    <div id="progressNotes" class="card-body flex-grow-1 droppable-area" data-column="progress"></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-3">
+                <div class="board card h-100 d-flex flex-column">
+                    <div class="card-header bg-success text-white d-flex justify-content-between">
+                        <h2 class="h4">Finished</h2>
+                        <button id="newFinishedNote" class="btn btn-outline-light font-weight-bold">+ Note</button>
+                    </div>
+                    <div id="finishedNotes" class="card-body flex-grow-1 droppable-area" data-column="finished"></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
