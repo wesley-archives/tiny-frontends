@@ -1,0 +1,115 @@
+:root {
+    --primary: #0f172a;
+    --muted: #f5f5f5;
+    --border: #e2e8f0;
+    --input: #f8fafc;
+    --ring: #cbd5e1;
+    --radius: 0.5rem;
+    --danger: #ef4444;
+    --text: #1e293b;
+    --placeholder: #94a3b8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--muted);
+    color: var(--text);
+    padding: 2rem;
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+input {
+    background: var(--input);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.625rem 0.75rem;
+    font-size: 1rem;
+    color: var(--text);
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--ring);
+    box-shadow: 0 0 0 2px var(--ring);
+}
+
+input::placeholder {
+    color: var(--placeholder);
+}
+
+button {
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    border: none;
+    background: var(--primary);
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #1e293b;
+}
+
+.error {
+    font-size: 0.8rem;
+    color: var(--danger);
+    display: none;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown)~.error {
+    display: block;
+}
