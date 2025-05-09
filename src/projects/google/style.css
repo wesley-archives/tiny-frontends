@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    color: #202124;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 1.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5em;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+nav .icon {
+    height: 24px;
+}
+
+nav .profile {
+    height: 32px;
+    border-radius: 50%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+.logo img {
+    width: 272px;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 0 14px;
+    height: 44px;
+    transition: box-shadow 0.2s;
+}
+
+.search-input:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.search-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.search-input .icon {
+    height: 20px;
+    opacity: 0.5;
+}
+
+.search-buttons {
+    margin-top: 2em;
+    display: flex;
+    gap: 1em;
+}
+
+.search-buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-buttons button:hover {
+    border: 1px solid #dadce0;
+}
+
+.shortcuts {
+    margin-top: 4em;
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shortcuts a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 13px;
+    width: 72px;
+}
+
+.shortcuts img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.5em;
+}
