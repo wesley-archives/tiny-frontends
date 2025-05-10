@@ -171,8 +171,12 @@ a:hover {
     cursor: pointer;
 }
 
-.projects__title {
-    margin: 1rem 0 0.5rem;
+.projects__item > p {
+    margin: 1rem 0;
+}
+
+.projects__item a {
+    color: var(--accent);
 }
 
 /* CONTACT */
