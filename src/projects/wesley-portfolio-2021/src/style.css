@@ -1,0 +1,250 @@
+:root {
+    --bg: #f5f5f5;
+    --bg-accent: #eaeaea;
+    --bg-contrast: #ccc;
+    --text: #333;
+    --text-accent: #555;
+    --text-contrast: #777;
+    --accent: #1c88b3;
+    --font-family: 'Noto Sans', sans-serif;
+    --max-width: 1000px;
+    --padding: 1.5rem;
+}
+
+body.theme--dark {
+    --bg: #1b1b1b;
+    --bg-accent: #1e1e1e;
+    --bg-contrast: #333;
+    --text: #ddd;
+    --text-accent: #b0b0b0;
+    --text-contrast: #999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+p,
+a {
+    color: var(--text-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    padding: var(--padding);
+    margin: auto;
+}
+
+/* NAV */
+.nav {
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--bg-contrast);
+    position: sticky;
+    top: 0;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav__link {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.nav__link:hover {
+    color: var(--accent);
+}
+
+.nav__theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: var(--text);
+}
+
+/* HEADER */
+.header {
+    padding: 4rem 0;
+}
+
+.header__badge {
+    background-color: var(--bg-contrast);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--text-accent);
+}
+
+.header__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header__intro {
+    max-width: 600px;
+    color: var(--text-accent);
+}
+
+.header__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* COMMON */
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content p {
+    color: var(--text-accent);
+}
+
+/* SKILLS */
+.skills {
+    padding: 2rem 0;
+}
+
+.skills__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 2rem 0;
+}
+
+.projects__item {
+    background-color: var(--bg-accent);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+}
+
+.projects__item:hover {
+    border: 1px solid var(--bg-contrast);
+    cursor: pointer;
+}
+
+.projects__title {
+    margin: 1rem 0 0.5rem;
+}
+
+/* CONTACT */
+.contact {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__info {
+    margin-bottom: 1rem;
+}
+
+.contact__socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* EDUCATION */
+.education {
+    padding: 2rem 0;
+}
+
+.education__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.education__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.education__item p {
+    color: var(--text-accent);
+}
+
+/* FOOTER */
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--text-accent);
+    font-size: 0.9rem;
+}
+
+/* TO-TOP BUTTON */
+.to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--bg-contrast);
+    color: var(--text);
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.to-top:hover {
+    background-color: var(--accent);
+    color: var(--bg);
+}
+
+.to-top--visible {
+    opacity: 1;
+    visibility: visible;
+}
