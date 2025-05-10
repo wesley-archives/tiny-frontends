@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wesley Bertipaglia | Software Engineer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="src/img/favicon.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="container nav__container">
+            <a href="#" class="nav__logo"><strong>Wesley Bertipaglia</strong></a>
+            <ul class="nav__menu">
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <p class="header__badge">Aspiring Software Engineer</p>
+            <h1 class="header__title">Hello, I'm Wesley</h1>
+            <p class="header__intro">
+                I'm studying Computer Science fundamentals with C and C++, learning Data Structures and Algorithms, and
+                building backend services with Node.js. I'm passionate about system design, clean code, and scalable
+                architectures.
+            </p>
+            <a href="#contact" class="header__cta cta">
+                <span>Let's connect</span>
+            </a>
+        </div>
+    </header>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section__title">Skills</h2>
+
+            <div class="skills__content content">
+                <div class="skills__block">
+                    <h3 class="skills__title">Languages & Tools</h3>
+                    <p>C, C++, Node.js, JavaScript, Git, Bash, REST APIs, JSON</p>
+                </div>
+                <div class="skills__block">
+                    <h3 class="skills__title">Learning Focus</h3>
+                    <p>Systems programming, data structures, backend architecture, databases, and testing.</p>
+                </div>
+                <div class="skills__block">
+                    <h3 class="skills__title">Interests</h3>
+                    <p>Building CLI tools, writing efficient algorithms, and contributing to open source backend
+                        utilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section__title">Projects</h2>
+            <div class="projects__content content">
+                <article class="projects__item">
+                    <h3 class="projects__title">C Bank (CLI Banking Simulator)</h3>
+                    <p>A command-line banking application written in C. Handles basic account operations like deposits, withdrawals, and
+                        balance tracking using file I/O, structured data, and input validation. Designed to deepen understanding of
+                        memory management and modular code architecture.</p>
+                </article>
+                
+                <article class="projects__item">
+                    <h3 class="projects__title">CPP Notes (CLI Note-Taking App)</h3>
+                    <p>A simple but structured note-taking app in C++ using file streams and classes. Built to explore object-oriented
+                        design in CLI tools while learning about data persistence and clean command parsing.</p>
+                </article>
+                
+                <article class="projects__item">
+                    <h3 class="projects__title">Task Scheduler API</h3>
+                    <p>A RESTful microservice built with Node.js to manage scheduled background tasks using Redis queues and PostgreSQL.
+                        Features include dynamic job creation, retry handling, and cron-style scheduling. Ideal for practicing backend
+                        architecture and asynchronous workflows.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section__title">Education</h2>
+    
+            <div class="education__content content">
+                <div class="education__item">
+                    <h3 class="education__title">IT for Business, FATEC (2021–2023, expected)</h3>
+                    <p>Main study areas: algorithms and data structures, software engineering, system architecture, and
+                        databases.</p>
+                </div>
+                <div class="education__item">
+                    <h3 class="education__title">CS50 – Harvard University</h3>
+                    <p>Main study areas: C, C++, Python, data structures and algorithms, and systems programming
+                        fundamentals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container contact__container">
+            <div class="contact__info">
+                <h2 class="section__title">Contact Me</h2>
+                <p>Feel free to reach out if you're working on backend systems, collaborative tools, or low-level
+                    programming challenges.</p>
+                <div class="contact__socials socials">
+                    <a href="https://github.com/wesleybertipaglia" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/wesley-bertipaglia/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+
+            <form action="#" class="contact__form" aria-label="Contact Form">
+                <input type="text" placeholder="Your Name" required aria-label="Your Name" />
+                <input type="email" placeholder="Your Email" required aria-label="Your Email" />
+                <textarea placeholder="Your Message" rows="6" style="resize: none;"
+                    aria-label="Your Message"></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2020 Wesley Bertipaglia. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
