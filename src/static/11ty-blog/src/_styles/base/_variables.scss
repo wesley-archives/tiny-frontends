@@ -1,0 +1,32 @@
+// _variables.scss
+
+/* Color Palette */
+$dark-1: #111;
+$dark-2: #222;
+$dark-3: #333;
+$light-1: #fff;
+$light-2: #f5f5f5;
+$light-3: #fafafa;
+
+/* Spacing (rem-based) */
+$base-spacing: 0.25rem;
+$spacing-unit: 1rem;
+
+/* Typography */
+$font-size-base: 1rem;
+$font-size-heading: 1.25rem;
+$line-height-base: 1.5;
+
+/* Z-index values */
+$z-index-base: 10;
+$z-index-modal: 1000;
+
+/* Borders and shadows */
+$border-radius: 5px;
+$box-shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+$box-shadow-heavy: 0 4px 6px rgba(0, 0, 0, 0.15);
+
+/* Transition speeds */
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;

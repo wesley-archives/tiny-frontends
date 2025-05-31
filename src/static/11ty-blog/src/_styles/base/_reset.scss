@@ -1,0 +1,72 @@
+// _reset.scss
+
+/* Box model reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML5 display roles for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+/* Set a consistent base font size */
+html {
+    font-size: 100%;
+}
+
+/* Remove the border in IE 10+ */
+a:focus {
+    outline: none;
+}
+
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+/* Remove quotes from blockquotes and citations */
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+}
+
+/* Remove table spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Remove any default styling for form elements */
+input,
+button,
+select,
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+}

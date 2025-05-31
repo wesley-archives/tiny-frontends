@@ -1,0 +1,39 @@
+// _grid.scss
+
+.grid {
+    display: grid;
+    gap: $base-spacing;
+}
+
+.grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--auto {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.grid--center {
+    justify-content: center;
+    align-items: center;
+}
+
+.grid--gap-sm {
+    gap: $base-spacing;
+}
+
+.grid--gap-md {
+    gap: $base-spacing * 2;
+}
+
+.grid--gap-lg {
+    gap: $base-spacing * 4;
+}

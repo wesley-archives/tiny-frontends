@@ -1,0 +1,20 @@
+---
+layout: main-layout.html
+title: Showcase
+tags: nav
+---
+
+<section class="showcase">
+  <div class="articles">
+    {% for showcase in collections.showcase %}
+    <article class="card card--showcase">
+      <a class="card__title" href="{{ showcase.url }}">{{ showcase.data.title }}</a>
+      <p class="card__meta">
+        <span class="card__author">{{ showcase.data.author }}</span> |
+        <time class="card__date" datetime="{{ showcase.date }}">{{ showcase.date | date: "%B %d, %Y" }}</time>
+      </p>
+      <p class="card__summary">{{ showcase.data.summary }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>

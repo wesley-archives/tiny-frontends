@@ -1,0 +1,103 @@
+// _typography.scss
+
+/* Base font settings */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem; // base font size
+    line-height: 1.5;
+    color: $light-2;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Georgia', serif; // serif font for headings
+    margin-bottom: 1rem;
+    color: $light-1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: $light-2;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: lighten($light-2, 10%);
+    }
+
+    &:focus {
+        outline: 2px solid $light-2;
+    }
+}
+
+/* Lists */
+ul,
+ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Blockquotes */
+blockquote {
+    font-style: italic;
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+    border-left: 4px solid $dark-3;
+}
+
+/* Code blocks */
+pre {
+    background-color: $dark-2;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    color: $light-2;
+    overflow: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: $light-2;
+}

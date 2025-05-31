@@ -1,0 +1,46 @@
+// _card.scss
+
+/* Base card styles */
+.card {
+    background-color: $dark-2;
+    border-radius: $border-radius;
+    padding: 1.5rem;
+    box-shadow: $box-shadow-light;
+    transition: transform $transition-normal ease, box-shadow $transition-normal ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: $box-shadow-heavy;
+}
+
+.card__header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $light-1;
+}
+
+.card__body {
+    font-size: 1rem;
+    color: $light-2;
+}
+
+.card__footer {
+    font-size: 0.875rem;
+    color: $light-3;
+    text-align: right;
+}
+
+/* Card variants (example) */
+.card--featured {
+    border: 2px solid $light-2;
+}
+
+.card--highlighted {
+    background-color: $dark-3;
+    box-shadow: $box-shadow-heavy;
+}

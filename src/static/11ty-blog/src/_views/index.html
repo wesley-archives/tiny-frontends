@@ -1,0 +1,20 @@
+---
+layout: main-layout.html
+title: Home
+---
+
+<section class="featured-posts">
+  <h2>Featured Posts</h2>
+  <div class="articles">
+    {% for post in collections.featured %}
+    <article class="card card--post">
+      <a class="card__title" href="{{ post.url }}">{{ post.data.title }}</a>
+      <p class="card__meta">
+        <span class="card__author">{{ post.data.author }}</span> |
+        <time class="card__date" datetime="{{ post.date }}">{{ post.date | date: "%B %d, %Y" }}</time>
+      </p>
+      <p class="card__summary">{{ post.data.summary }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>

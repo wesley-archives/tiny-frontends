@@ -1,0 +1,35 @@
+// _header.scss
+
+/* Header styles */
+.header {
+    background-color: $dark-1;
+    color: $light-2;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: $light-2;
+    text-transform: uppercase;
+}
+
+.header__nav {
+    display: flex;
+    gap: 1rem;
+
+    a {
+        font-size: 1rem;
+        color: $light-2;
+        padding: 0.5rem;
+        transition: background-color $transition-fast ease;
+
+        &:hover {
+            background-color: $dark-3;
+            border-radius: $border-radius;
+        }
+    }
+}

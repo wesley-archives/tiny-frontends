@@ -1,0 +1,35 @@
+// _input.scss
+
+/* Base input styles */
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: $border-radius;
+    border: 1px solid $dark-3;
+    outline: none;
+    transition: border-color $transition-normal ease;
+
+    &:focus {
+        border-color: $light-2;
+    }
+
+    &::placeholder {
+        color: $light-3;
+    }
+}
+
+/* Textarea */
+.textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Input with error state */
+.input--error {
+    border-color: red;
+
+    &:focus {
+        border-color: darkred;
+    }
+}

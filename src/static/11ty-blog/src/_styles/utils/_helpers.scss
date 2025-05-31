@@ -1,0 +1,92 @@
+// _helpers.scss
+
+// Margin & Padding Helpers
+@for $i from 0 through 6 {
+    .m-#{$i} {
+        margin: $base-spacing * $i;
+    }
+
+    .mt-#{$i} {
+        margin-top: $base-spacing * $i;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: $base-spacing * $i;
+    }
+
+    .ml-#{$i} {
+        margin-left: $base-spacing * $i;
+    }
+
+    .mr-#{$i} {
+        margin-right: $base-spacing * $i;
+    }
+
+    .p-#{$i} {
+        padding: $base-spacing * $i;
+    }
+
+    .pt-#{$i} {
+        padding-top: $base-spacing * $i;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: $base-spacing * $i;
+    }
+
+    .pl-#{$i} {
+        padding-left: $base-spacing * $i;
+    }
+
+    .pr-#{$i} {
+        padding-right: $base-spacing * $i;
+    }
+}
+
+// Display
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-none {
+    display: none;
+}
+
+// Text alignment
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// Widths
+.w-100 {
+    width: 100%;
+}
+
+.max-w-screen {
+    max-width: 100vw;
+}
+
+// Cursor
+.cursor-pointer {
+    cursor: pointer;
+}

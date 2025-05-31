@@ -1,0 +1,314 @@
+.p-0 {
+  padding: 0rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.m-0 {
+  padding: 0rem;
+}
+
+.m-1 {
+  padding: 0.25rem;
+}
+
+.m-2 {
+  padding: 0.5rem;
+}
+
+.m-3 {
+  padding: 0.75rem;
+}
+
+.m-4 {
+  padding: 1rem;
+}
+
+.m-5 {
+  padding: 1.25rem;
+}
+
+.m-6 {
+  padding: 1.5rem;
+}
+
+.gap-0 {
+  padding: 0rem;
+}
+
+.gap-1 {
+  padding: 0.25rem;
+}
+
+.gap-2 {
+  padding: 0.5rem;
+}
+
+.gap-3 {
+  padding: 0.75rem;
+}
+
+.gap-4 {
+  padding: 1rem;
+}
+
+.gap-5 {
+  padding: 1.25rem;
+}
+
+.gap-6 {
+  padding: 1.5rem;
+}
+
+* {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: unset;
+  height: unset;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+footer,
+main {
+  padding: 1.5rem;
+}
+
+header {
+  border-bottom: solid 1px #333;
+}
+
+main {
+  flex: 1;
+}
+
+.content, footer > div, header > nav, main > div {
+  width: 100%;
+  height: unset;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  gap: 0;
+  max-width: 1200px;
+}
+
+main > div {
+  flex-direction: column;
+}
+
+header > nav {
+  justify-content: space-between;
+}
+
+footer > div {
+  justify-content: space-between;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+body {
+  background-color: #111;
+  color: #f5f5f5;
+}
+
+h6 {
+  margin-bottom: 0.25rem;
+}
+
+h5 {
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 1.25rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: #f5f5f5;
+}
+
+ul {
+  width: unset;
+  height: unset;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+hr {
+  border: 0;
+  border-top: solid 1px #333 !important;
+  margin: 1rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: block;
+}
+
+h6 {
+  margin-bottom: 0.25rem;
+}
+
+h5 {
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 1.25rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+article h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+article h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+article h3 {
+  font-size: 1.75rem;
+  margin: 1.25rem 0;
+}
+article h4,
+article h5,
+article h6 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+article p {
+  margin-bottom: 1rem;
+}
+article p a {
+  text-decoration: underline;
+  font-weight: 500;
+  color: #f5f5f5;
+  transition: color 0.2s ease;
+}
+article p a:hover {
+  color: white;
+}
+article a {
+  color: #f5f5f5;
+}
+article ul,
+article ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+article ul li,
+article ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+article ul {
+  list-style: disc;
+}
+article ol {
+  list-style: decimal;
+}
+article hr {
+  border: 0;
+  border-top: solid 1px #333 !important;
+  margin: 1rem 0;
+}
+article img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: block;
+}
+article strong {
+  font-weight: 700;
+  color: #fff;
+}
+article em {
+  font-style: italic;
+  color: white;
+}
+
+@keyframes floating {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+.eleventy {
+  height: 10rem;
+  position: absolute;
+  top: 3rem;
+  right: 1.5rem;
+  animation: floating 3s infinite ease-in-out;
+}
+
+/*# sourceMappingURL=style.css.map */
