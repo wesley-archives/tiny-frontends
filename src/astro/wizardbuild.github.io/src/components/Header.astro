@@ -1,0 +1,27 @@
+---
+import Container from "@components/Container.astro";
+import Link from "@components/Link.astro";
+import ThemeToggle from "@components/ThemeToggle.astro";
+import HorizontalSeparator from "@components/HorizontalSeparator.astro";
+import Socials from "./Socials.astro";
+---
+
+<header
+    class="sticky top-0 z-10 backdrop-blur-md border-b border-light-border-3 border-opacity-20"
+>
+    <Container>
+        <nav class="flex justify-between items-center py-4">
+            <div class="flex gap-4 h-6">
+                <Link href="/" class="font-medium">🧙🏼‍♂️ Wizard</Link>
+            </div>
+
+            <div class="flex gap-4 items-center">
+                <Link href="/docs">Docs</Link>
+                <HorizontalSeparator />
+                <ThemeToggle />
+                <HorizontalSeparator />
+                <Socials size={6} />
+            </div>
+        </nav>
+    </Container>
+</header>

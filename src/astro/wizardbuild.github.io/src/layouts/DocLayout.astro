@@ -1,0 +1,29 @@
+---
+import { type CollectionEntry } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import { formatDate } from "@lib/utils";
+
+type Props = {
+	doc: CollectionEntry<"docs">;
+};
+
+const { doc } = Astro.props;
+---
+
+<PageLayout title={doc.data.title} description={doc.data.description}>
+	<Container>
+		<article>
+			<div>
+				<h1 class="text-3xl font-bold">{doc.data.title}</h1>
+				<p class="text-sm">
+					{formatDate({ date: doc.data.createdAt })}
+				</p>
+			</div>
+
+			<div id="content" class="mb-16">
+				<slot />
+			</div>
+		</article>
+	</Container>
+</PageLayout>

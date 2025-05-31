@@ -1,0 +1,33 @@
+{
+  "name": "wizardbuild.github.io",
+  "version": "1.0.0",
+  "description": "Wizard Build helps developers effortlessly set up complete backend environments in seconds. Choose your stack, automate configurations, and focus on building amazing applications.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "keywords": [
+    "toolkit",
+    "tool",
+    "setup",
+    "backend",
+    "wizard"
+  ],
+  "author": "wizardbuild",
+  "license": "MIT",
+  "dependencies": {
+    "@astrojs/check": "^0.9.3",
+    "@astrojs/mdx": "^3.1.7",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/tailwind": "^5.1.1",
+    "astro": "^4.15.9",
+    "astro-icon": "^1.1.1",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2"
+  }
+}

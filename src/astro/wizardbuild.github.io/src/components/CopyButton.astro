@@ -1,0 +1,17 @@
+---
+interface Props {
+    icon?: string;
+    title: string;
+    buttonId: string;
+}
+
+const { icon = "📜", title, buttonId } = Astro.props;
+---
+
+<button
+    id={buttonId}
+    class="copy-button px-4 py-2 font-mono font-medium bg-light-background-1 dark:bg-dark-background-1 shadow bg-opacity-50 border border-dark-background-3 w-fit rounded"
+>
+    <span>{icon}</span>
+    <span>{title}</span>
+</button>

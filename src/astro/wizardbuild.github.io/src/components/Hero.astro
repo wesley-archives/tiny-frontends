@@ -1,0 +1,45 @@
+---
+import Container from "@components/Container.astro";
+import CopyButton from "@components/CopyButton.astro";
+---
+
+<Container>
+    <section
+        class="my-16 py-16 border-b border-light-background-3 dark:border-dark-background-3 border-opacity-50"
+    >
+        <div class="text-center">
+            <h1
+                class="font-bold text-3xl md:text-5xl text-light-text-2 dark:text-dark-text-2"
+            >
+                🧙‍♂️ Unleash Your Backend Magic! ✨
+            </h1>
+
+            <p
+                class="my-6 md:my-8 text-lg md:text-2xl text-light-text-3 dark:text-dark-text-3 opacity-85"
+            >
+                Welcome to Wizard Build, the enchanted tool for backend
+                developers!
+            </p>
+
+            <p
+                class="md:text-lg text-light-text-3 dark:text-dark-text-3 opacity-75"
+            >
+                Conjure powerful setups and create spellbinding applications
+                with ease! 🪄
+            </p>
+
+            <div class="mt-8">
+                <CopyButton
+                    icon="🕯️"
+                    title="npx wizard-build init"
+                    buttonId="copy-init-command"
+                />
+            </div>
+        </div>
+    </section>
+</Container>
+
+<script>
+    import { copyToClipboard } from "@lib/utils";
+    copyToClipboard("#copy-init-command", "npx wizard-build init");
+</script>

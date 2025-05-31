@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+article {
+  @apply text-light-text-3 dark:text-dark-text-3 mt-8;
+}
+
+/* Links */
+article a {
+  @apply text-blue-500 dark:text-blue-400;
+}
+
+article a:hover {
+  @apply text-blue-600 dark:text-blue-500;
+}
+
+/* Headings */
+article h1 {
+  @apply text-4xl mb-6 font-bold;
+}
+
+article h2 {
+  @apply text-2xl mt-6 mb-4 font-bold pb-2 border-b border-light-border-1/10 dark:border-dark-border-1/10;
+}
+
+article h3,
+article h4 {
+  @apply text-xl mt-6 mb-3 font-semibold;
+}
+
+article h5,
+article h6 {
+  @apply text-lg mt-6 mb-3 font-medium;
+}
+
+/* Paragraphs */
+article p {
+  @apply text-base my-3 leading-relaxed;
+}
+
+/* Lists */
+article ul,
+article ol {
+  @apply my-4 pl-5;
+}
+
+article ul li::marker {
+  @apply text-light-text-3/50 dark:text-dark-text-3/50;
+}
+
+article ol {
+  @apply list-decimal;
+}
+
+article ul {
+  @apply list-disc;
+}
+
+/* Blockquotes */
+article blockquote {
+  @apply border-l-4 pl-4 italic text-light-text-2 dark:text-dark-text-2 my-4 border-light-border-3 dark:border-dark-border-3;
+}
+
+/* Code (Inline and Block) */
+article pre {
+  @apply bg-dark-background-1 p-4 rounded-lg border border-light-border-3/10 dark:border-dark-border-3/10 overflow-x-auto;
+}
+
+/* Tables */
+article table {
+  @apply w-full my-4 table-auto border-collapse text-left;
+}
+
+article th {
+  @apply px-4 py-2 font-bold text-light-text-3 dark:text-dark-text-3 border-b border-light-border-3/10 dark:border-dark-border-3/10;
+}
+
+article td {
+  @apply px-4 py-2 border-b border-light-border-1/10 dark:border-dark-border-1/10;
+}
+
+/* Horizontal Rules (HR) */
+article hr {
+  @apply my-8 border-t border-light-border-1/10 dark:border-dark-border-1/10;
+}
+
+/* Figures and Images */
+article figure,
+article img {
+  @apply w-full h-auto aspect-[21/9];
+}
+
+article figure {
+  @apply rounded-lg overflow-hidden;
+}
+
+article img {
+  @apply transform transition-transform duration-300 ease-in-out;
+}
+
+article img:hover {
+  @apply scale-110;
+}
+
+article figcaption {
+  @apply text-sm text-center text-light-text-2 dark:text-dark-text-2 mt-2;
+}
+
+/* Text Styling: Bold, Italic, Underline */
+article strong {
+  @apply font-bold;
+}
+
+article em {
+  @apply italic;
+}
+
+article u {
+  @apply underline;
+}
+
+/* Additional refinements */
+article {
+  @apply leading-loose;
+}
+
+/* Miscellaneous elements */
+article del {
+  @apply line-through text-red-500;
+}
+
+article ins {
+  @apply underline text-green-500;
+}
+
+article sup {
+  @apply align-super text-sm;
+}
+
+article sub {
+  @apply align-sub text-sm;
+}

@@ -1,0 +1,26 @@
+---
+import Container from "@components/Container.astro";
+import FeatureCard from "@components/FeatureCard.astro";
+---
+
+<Container>
+    <section class="my-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <FeatureCard
+                icon="🧙‍♂️"
+                title="Wizard CLI"
+                description="Conjure powerful setups and create spellbinding applications with ease!"
+            />
+            <FeatureCard
+                icon="🔮"
+                title="Magic Templates"
+                description="Choose from a variety of templates to start your project with a magical touch."
+            />
+            <FeatureCard
+                icon="🪄"
+                title="Enchanted Commands"
+                description="Use powerful commands to manage your project and cast spells on your code."
+            />
+        </div>
+    </section>
+</Container>

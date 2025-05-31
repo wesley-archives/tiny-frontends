@@ -1,0 +1,48 @@
+---
+import { SOCIALS } from "@consts";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+    showAll?: boolean;
+    size?: number;
+}
+
+const { showAll = false, size = 4 } = Astro.props;
+
+let socialLinks = showAll
+    ? SOCIALS
+    : SOCIALS.filter((item, _) => item.main == true);
+---
+
+<ul class="flex gap-4">
+    {
+        socialLinks.map((social) => (
+            <li>
+                <a
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-light-text-3/50 dark:text-dark-text-3/50 hover:text-light-text-3/75 dark:hover:text-dark-text-3/75"
+                >
+                    {social.icon ? (
+                        <Icon
+                            name={`logos/${social.icon}`}
+                            class={`w-${size} h-auto aspect-square`}
+                        />
+                    ) : (
+                        <span>{social.title}</span>
+                    )}
+                </a>
+            </li>
+        ))
+    }
+
+    <div class="hidden">
+        <!-- sizing preset -->
+        <span class="w-4 h-4"></span>
+        <span class="w-6 h-6"></span>
+        <span class="w-8 h-8"></span>
+        <span class="w-10 h-10"></span>
+        <span class="w-12 h-12"></span>
+    </div>
+</ul>

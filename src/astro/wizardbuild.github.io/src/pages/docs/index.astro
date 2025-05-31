@@ -1,0 +1,43 @@
+---
+import { DOCS } from "@consts";
+import { getCollection, type CollectionEntry } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+
+const docs = (await getCollection("docs")).sort(
+	(a: CollectionEntry<"docs">, b: CollectionEntry<"docs">) =>
+		b.data.createdAt.valueOf() - a.data.createdAt.valueOf(),
+);
+---
+
+<PageLayout title={DOCS.title} description={DOCS.description}>
+	<section>
+		<Container>
+			<h1 class="text-4xl font-bold mb-6">Docs</h1>
+
+			<ul class="flex flex-col gap-4">
+				{
+					docs.length > 0 ? (
+						docs.map((post: any) => (
+							<li>
+								<a
+									href={`/docs/${post.slug}`}
+									class="block px-4 py-2 rounded-md bg-light-background-2 dark:bg-dark-background-2 bg-opacity-50 border border-transparent hover:border-dark-background-3"
+								>
+									<h3 class="text-lg font-bold">
+										{post.data.title}
+									</h3>
+									<p class="text-base">
+										{post.data.description}
+									</p>
+								</a>
+							</li>
+						))
+					) : (
+						<li>No posts found</li>
+					)
+				}
+			</ul>
+		</Container>
+	</section>
+</PageLayout>

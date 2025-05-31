@@ -1,0 +1,12 @@
+---
+import "@/styles/global.css";
+import { HOME } from "@consts";
+import Hero from "@components/Hero.astro";
+import PageLayout from "@layouts/PageLayout.astro";
+import Features from "@components/Features.astro";
+---
+
+<PageLayout title={HOME.title} description={HOME.description}>
+	<Hero />
+	<Features />
+</PageLayout>

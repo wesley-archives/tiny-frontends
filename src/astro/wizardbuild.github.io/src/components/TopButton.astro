@@ -1,0 +1,12 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<button id="top" class="hidden p-2 fixed right-8 bottom-8 rounded bg-light-background-3 dark:bg-dark-background-3">
+    <Icon name={`symbols/angle-up`} class="w-4 h-4" />
+</button>
+
+<script>
+    import { scrollToTop } from '@lib/scrollToTop';
+    scrollToTop('top', 100);
+</script>
